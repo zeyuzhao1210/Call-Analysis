@@ -5,10 +5,10 @@ Project Group 7
 IEORE4501_001_2021_3
 ## Uni
 1. Ze Yu Zhao: zz2873
-2. Vivian Yang: 
+2. Vivian Yang: vwy2106
 
 ## Descripion for File: Top10.ipynb
-
+For this file, we first examined the information of the entire dataset. We found that Zipcode variable is of type float. After selecting our target zipcode of 10025 we assigned this number to variable named "zipcode" and type casted it into a float type so we are able to match the dataframe rows against this variable. We used the loc function to match the rows whose "Incident Zip" is the same as our "zipcode" variable and updated the dataframe to contain only matched rows with all the original columns. Finally, we filtered the dataframe containing only zipcode of 10025 by "complaint type" and used the value_counts() function to get a count of incidents for each incident category. Lastly, we used .head(10) to return only the top 10 type of indicdents by count given the zipcode. We assigned the output of the previous steps to a vairable "top10" which returns a series object.
 
 
 ## Descripion for File: Parking.ipynb
